@@ -22,9 +22,6 @@ These files can be used as an input to create a dashboard.
 
 The src folder contains the sourcecode for this project. This python file is well structured and commented. It is very easy to understand.
 
-The run.sh file in the top-most directory compiles and execute the source code.
+The run.sh file in the top-most directory compiles and execute the source code. Run bash run.sh command in gitbash to execute the project.
 
 Note: Please change the file locations in source file before execution.
-
-The reference to the original challenge is below:
-https://github.com/InsightDataScience/find-political-donors/blob/master/README.md#input-file
