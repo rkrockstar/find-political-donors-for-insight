@@ -1,7 +1,7 @@
 # Input data
 import csv
 import numpy as np
-file = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/itcont.txt", 'r')
+file = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/itcont.txt", 'r')
 #print(file.read().split('|'))
 yourResult = [line.split('|') for line in file.readlines()]
 print(yourResult)
@@ -11,7 +11,7 @@ print(yourResult)
 print(yourResult[0])
 
 # cleaned data
-file2 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "w")
+file2 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "w")
 array1 = []
 for i in range(len(yourResult)):
     sr = yourResult[i]
@@ -33,13 +33,13 @@ file2.close()
 #print(np.median(array1))
 
 # code for zip
-file3 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "r")
+file3 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "r")
 yourResult_f3 = [line.split('|') for line in file3.readlines()]
 
 print(yourResult_f3)
 d = []
 #array2 = []
-file4 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/output/median_zip.txt", "w")
+file4 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/output/medianvals_by_zip.txt", "w")
 globalamt_for_zip = []
 global_ziplist = []
 count_for_tran = 0
@@ -74,13 +74,13 @@ file4.close()
 
 
 # code for date
-file5 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "r")
+file5 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "r")
 yourResult_f3da = [line.split('|') for line in file5.readlines()]
 
 print(yourResult_f3da)
 dda = []
 #array2 = []
-file6 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/output/median_date.txt", "w")
+file6 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/output/medianvals_by_date.txt", "w")
 globalamt_for_date = []
 global_datelist = []
 count_for_tranda = 0
