@@ -15,6 +15,7 @@ print("Example of single record:\n")
 print(yourResult[0])
 print("\n")
 # cleaned data
+print("Cleaned file output:\n")
 file2 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "w")
 array1 = []
 for i in range(len(yourResult)):
@@ -29,9 +30,9 @@ for i in range(len(yourResult)):
      #   array1.append(float(tr_amt)) # Float data type is required here
         imtstr = [cmte_id, zip1, date1, tr_amt, other_id]
         myString1 = "|".join(str(elm) for elm in imtstr)
-        print("Cleaned file output:\n")
+
         print(myString1)
-        print("\n")
+
         #file2 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "a")
         file2.write(myString1+"\n")
 file2.close()
@@ -39,6 +40,7 @@ file2.close()
 #print(np.median(array1))
 
 # code for zip
+print("Zip output:\n")
 file3 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "r")
 yourResult_f3 = [line.split('|') for line in file3.readlines()]
 
@@ -72,9 +74,9 @@ for j in range(len(yourResult_f3)):
 #deleteContent1(file4)
     imtstr1 = [d, zipq, median1, count_for_tran, total_amt]
     myString12 = "|".join(str(elm) for elm in imtstr1)
-    print("Zip output:\n")
+
     print(myString12)
-    print("\n")
+
             # file2 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "a")
     file4.write(myString12 + "\n")
 file3.close()
@@ -82,6 +84,7 @@ file4.close()
 
 
 # code for date
+print("Date file output:\n")
 file5 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "r")
 yourResult_f3da = [line.split('|') for line in file5.readlines()]
 
@@ -108,9 +111,9 @@ for k in range(len(yourResult_f3da)):
 #deleteContent1(file4)
     imtstr1da = [dda, date, median1da, count_for_tranda, total_amtda]
     myString12da = "|".join(str(elm) for elm in imtstr1da)
-    print("Date file output:\n")
+
     print(myString12da)
-    print("\n")
+  
             # file2 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "a")
     file6.write(myString12da + "\n")
 file5.close()
