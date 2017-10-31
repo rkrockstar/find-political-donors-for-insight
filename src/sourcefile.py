@@ -4,10 +4,12 @@ import numpy as np
 file = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/itcont.txt", 'r')
 #print(file.read().split('|'))
 yourResult = [line.split('|') for line in file.readlines()]
+
+print("Original Input \n\n")
 print(yourResult)
 
 # SINGLE RECORD
-
+print("Example of single record:\n\n")
 print(yourResult[0])
 
 # cleaned data
