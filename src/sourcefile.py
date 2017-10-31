@@ -40,6 +40,7 @@ file2.close()
 #print(np.median(array1))
 
 # code for zip
+print("\n")
 print("Zip output:\n")
 file3 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "r")
 yourResult_f3 = [line.split('|') for line in file3.readlines()]
@@ -84,6 +85,7 @@ file4.close()
 
 
 # code for date
+print("\n")
 print("Date file output:\n")
 file5 = open("C:/Users/Rounak Kulkarni/Documents/GitHub/find-political-donors-for-insight/input/cleanedfile/cleaned.txt", "r")
 yourResult_f3da = [line.split('|') for line in file5.readlines()]
@@ -113,7 +115,7 @@ for k in range(len(yourResult_f3da)):
     myString12da = "|".join(str(elm) for elm in imtstr1da)
 
     print(myString12da)
-  
+
             # file2 = open("C:/Users/Rounak Kulkarni/Documents/Insight project/input/cleanedfile/cleaned.txt", "a")
     file6.write(myString12da + "\n")
 file5.close()
