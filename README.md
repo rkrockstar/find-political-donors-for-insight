@@ -1,6 +1,6 @@
 # find-political-donors-for-insight
 
-This is the coding challenge insight data engineering program. This challenge has been exciting and brainstorming. I have tried to perform well in this coding challenge.
+This is the coding challenge insight data engineering program. This challenge has been exciting and brainstorming.
 
 Above project files contain specific folders related to a specific process.
 
