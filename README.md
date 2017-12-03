@@ -1,4 +1,4 @@
-# find-political-donors-for-insight
+# Find-political-donors-for-insight
 
 This is the coding challenge insight data engineering program. This challenge has been exciting and brainstorming.
 
